@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 style="padding: 20px">To create an account, please input your info below:</h1>
+
+<form method="post" asp-action="UserResult" >
+    <label 
+        style="width: 100px; margin: auto"
+        for="fname">First Name:</label>
+    <input
+        style="width: 300px; margin: auto"
+        type="text" id="fname" name="FirstName" /><br /><br />
+
+    <label 
+        style="width: 100px; margin: auto"
+        for="lname">Last Name:</label>
+    <input
+        style="width: 300px; margin: auto"
+        type="text" id="lname" name="LastName" /><br /><br />
+
+    <label 
+        style="width: 100px; margin: auto"
+        for="eaddress">Email:</label>
+    <input 
+        style="width: 300px; margin: auto"
+        type="email" id="eaddress" name="Email" /><br /><br />
+
+    <label 
+        style="width: 100px; margin: auto"
+        for="pword">Password:</label>
+    <input 
+        style="width: 300px; margin: auto"
+        type="password" id="pword" name="Password" /><br /><br />
+
+    <input type="submit" />
+</form>
